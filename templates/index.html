@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&family=Quicksand:wght@300..700&display=swap"  rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <video autoplay muted loop class="j4HomeVideo">
+        <source src="{{ url_for('static', filename='home.mp4') }}">
+    </video>
+
+    <div class="j4Container">
+        <div class="j4InsideContainer">
+            <h1>register your interest</h1>
+            <h2>be early</h2>
+            <form action="#" method="POST">
+                <input name="j4Email" type="email" placeholder="Type email here..." value="{{ j4_Email }}">
+                <input type="hidden" name="csrf_token" value = "{{ csrf_token() }}" />
+                <input id="j4SubmitButton" type="submit" value="Submit">
+                <p>{{ j4EmailSubmissionMessage }}</p>
+            </form>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

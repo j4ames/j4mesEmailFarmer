@@ -1,0 +1,83 @@
+* {
+    color: white;
+    padding: 0;
+    margin: 0;
+
+}
+
+.j4HomeVideo {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;  
+    object-fit: cover;
+    pointer-events: none;
+    z-index: 0;
+    filter: grayscale(100%) blur(1rem);
+    transform: scale(1.1);
+  
+}
+
+.j4Container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.j4InsideContainer {
+    z-index: 3;
+}
+
+h1 {
+    font-family: "Jersey 20", sans-serif;
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+}
+
+#j4SubmitButton {
+    background-color: rgb(37, 96, 185);
+    border: none;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 2rem;
+    text-align: center;
+}
+
+#j4SubmitButton:hover {
+    background-color: rgb(20, 54, 105);
+    cursor: pointer;
+}
+
+input {
+    border-color: rgb(37, 96, 185);
+    height: 1.9rem;
+    width: 20rem;
+    background-color: rgba(65, 65, 65, 0.699);
+    padding: 0.2rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+input::placeholder {
+    color: white;
+}
